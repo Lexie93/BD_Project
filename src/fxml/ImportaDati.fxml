@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="340.0" prefWidth="395.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="62.0" layoutY="61.0" text="Nome File" />
+      <Button layoutX="264.0" layoutY="248.0" mnemonicParsing="false" onAction="#conferma" text="Conferma" />
+      <Button layoutX="89.0" layoutY="248.0" mnemonicParsing="false" onAction="#annulla" text="Annulla" />
+      <ComboBox fx:id="nomeFile" layoutX="43.0" layoutY="97.0" prefWidth="150.0" promptText="seleziona il file" />
+      <Label layoutX="264.0" layoutY="61.0" text="Tipo file dati" />
+      <ComboBox fx:id="tipoFile" layoutX="222.0" layoutY="97.0" prefWidth="150.0" promptText="seleziona il tipo" />
+   </children>
+</AnchorPane>

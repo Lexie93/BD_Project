@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="396.0" prefWidth="406.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="nomeSatellite" layoutX="178.0" layoutY="31.0" />
+      <Label layoutX="72.0" layoutY="35.0" text="Nome Satellite" />
+      <Label layoutX="83.0" layoutY="121.0" text="Data inizio" />
+      <Label layoutX="240.0" layoutY="121.0" text="Data Fine" />
+      <Button layoutX="283.0" layoutY="329.0" mnemonicParsing="false" onAction="#conferma" text="Salva" />
+      <Button layoutX="88.0" layoutY="329.0" mnemonicParsing="false" onAction="#annulla" text="Annulla" />
+      <TextField fx:id="nomeAgenzia1" layoutX="47.0" layoutY="272.0" />
+      <Label layoutX="74.0" layoutY="228.0" text="NomeAgenzia 1" />
+      <DatePicker fx:id="dataInizio" layoutX="29.0" layoutY="157.0" />
+      <DatePicker fx:id="dataFine" layoutX="218.0" layoutY="157.0" />
+      <TextField fx:id="nomeAgenzia2" layoutX="216.0" layoutY="272.0" />
+      <Label layoutX="241.0" layoutY="228.0" text="NomeAgenzia 2" />
+   </children>
+</AnchorPane>

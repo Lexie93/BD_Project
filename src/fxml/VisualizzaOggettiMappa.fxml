@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="461.0" prefWidth="494.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="dati" layoutX="16.0" layoutY="107.0" prefHeight="293.0" prefWidth="463.0">
+        <columns>
+          <TableColumn fx:id="colonna1" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="colonna2" prefWidth="75.0" text="longitudine" />
+            <TableColumn fx:id="colonna3" prefWidth="75.0" text="latitudine" />
+            <TableColumn fx:id="colonna4" prefWidth="75.0" text="Banda" />
+            <TableColumn fx:id="colonna5" prefWidth="75.0" text="Flusso" />
+            <TableColumn fx:id="colonna6" prefWidth="75.0" text="Errore" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="mappa" layoutX="38.0" layoutY="42.0" prefWidth="150.0" promptText="Seleziona banda" />
+      <ComboBox fx:id="banda" layoutX="195.0" layoutY="42.0" prefWidth="150.0" promptText="Seleziona banda" />
+      <Button layoutX="366.0" layoutY="42.0" mnemonicParsing="false" onAction="#conferma" text="Cerca" />
+      <Button layoutX="221.0" layoutY="422.0" mnemonicParsing="false" onAction="#annulla" text="Indietro" />
+   </children>
+</AnchorPane>

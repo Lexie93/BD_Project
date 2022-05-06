@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="454.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="27.0" layoutY="24.0" text="Longitudine" />
+      <Label layoutX="179.0" layoutY="23.0" text="Latitudine" />
+      <TextField fx:id="longitudine" layoutX="15.0" layoutY="49.0" prefHeight="25.0" prefWidth="107.0" />
+      <TextField fx:id="latitudine" layoutX="159.0" layoutY="49.0" prefHeight="25.0" prefWidth="107.0" />
+      <RadioButton fx:id="quadrato" layoutX="351.0" layoutY="32.0" mnemonicParsing="false" text="Quadrato">
+         <toggleGroup>
+            <ToggleGroup fx:id="Forma" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="cerchio" layoutX="351.0" layoutY="62.0" mnemonicParsing="false" text="Cerchio" toggleGroup="$Forma" />
+      <Button layoutX="269.0" layoutY="165.0" mnemonicParsing="false" onAction="#conferma" text="Ricerca" />
+      <Button layoutX="93.0" layoutY="165.0" mnemonicParsing="false" onAction="#annulla" text="Indietro" />
+      <TableView fx:id="dati" layoutX="59.0" layoutY="227.0" prefHeight="209.0" prefWidth="334.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="longitudineC" prefWidth="75.0" text="Longitudine" />
+            <TableColumn fx:id="latitudineC" prefWidth="75.0" text="Latitudine" />
+        </columns>
+      </TableView>
+      <Label layoutX="122.0" layoutY="93.0" text="Distanza" />
+      <TextField fx:id="distanza" layoutX="85.0" layoutY="118.0" />
+      <RadioButton fx:id="sorgente" layoutX="350.0" layoutY="102.0" mnemonicParsing="false" text="Sorgente">
+         <toggleGroup>
+            <ToggleGroup fx:id="Tipo" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="clump" layoutX="350.0" layoutY="131.0" mnemonicParsing="false" text="Clump" toggleGroup="$Tipo" />
+   </children>
+</AnchorPane>
